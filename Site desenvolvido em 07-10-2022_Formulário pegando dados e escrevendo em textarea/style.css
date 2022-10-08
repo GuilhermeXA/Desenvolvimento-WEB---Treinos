@@ -1,0 +1,60 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 300px;
+    height: 470px;
+    border: solid;
+    margin: auto;
+    margin-top: 50px;
+    border-radius: 10px;
+}
+
+form label {
+    width: 80%;
+    display: block;
+    margin-top: 10px;
+    margin-left: 10%;
+}
+
+form input {
+    width: 80%;
+    height: 20px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+form select {
+    width: 81%;
+    height: 25px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 10%;
+}
+
+form textarea {
+    width: 80%;
+    display: block;
+    margin-top: 20px;
+    margin-left: 10%;
+}
+
+form button[type=submit] {
+    width: 38%;
+    height: 50px;
+    margin-left: 10%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+form button[type=reset] {
+    width: 38%;
+    height: 50px;
+    margin-left: 3%;
+    margin-top: 15px;
+    border-radius: 5px;
+}
