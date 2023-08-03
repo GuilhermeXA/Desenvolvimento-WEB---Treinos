@@ -1,0 +1,34 @@
+body {
+    margin: auto;
+    padding: auto;
+}
+
+#formulario {
+    width: 400px;
+    margin-left: 10px;
+}
+
+#formulario label {
+    display: block;
+    margin-top: 10px;
+}
+
+#formulario input {
+    display: block;
+    margin-top: 5px;
+    width: 205px;
+}
+
+#inpTextArea {
+    height: 100px;
+    margin-top: 15px;
+}
+
+button {
+    margin-top: 10px;
+    margin-left: 10px;
+    width: 100px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+}
