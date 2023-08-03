@@ -1,0 +1,53 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#formulario {
+    margin: auto;
+    width: 300px;
+    height: 300px;
+    background-color: aliceblue;
+}
+
+h1 {
+    font-size: 40px;
+    text-align: center;
+    padding: 5px;
+    border-bottom: solid;
+}
+
+label {
+    width: 20px;
+    height: 25px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+input {
+    width: 250px;
+    height: 25px;
+    display: block;
+    margin-top: 5px;
+    margin-left: 20px;
+    border: none;
+    font-size: 24px;
+}
+
+button {
+    width: 123px;
+    height: 70px;
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 15px;
+    margin-left: 20px;
+    border: none;
+}
+
+#btnLimpar {
+    margin-left: 5px;
+}
