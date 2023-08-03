@@ -1,0 +1,44 @@
+form {
+	width: 320px;
+	height: 400px;
+	align-items: center;
+	border-style: solid;
+	background-color: rgb(120,160,160);
+	border-radius: 5%;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 2px;
+	border-bottom: solid;
+	height: 50px;
+}
+
+input {
+	margin: auto;
+	margin-left: 10%;
+	width: 80%;
+	height: 30px;
+}
+
+h4 {
+	margin-left: 10%;
+	margin-bottom: 5px;
+	margin-top: 5px;
+}
+
+p {
+	margin: auto;
+	margin-left: 10%;
+	margin-bottom: 10px;
+	width: 80%;
+	height: 30px;
+}
+
+button {
+	margin-left: 10%;
+	margin-top: 5px;
+	width: 82%;
+	height: 60px;
+	font-size: 25px;
+}

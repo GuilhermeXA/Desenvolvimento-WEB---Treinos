@@ -4,7 +4,8 @@ function calcularIMC() {
 
     const imc = (peso / (altura * altura)).toFixed(1);
 
-    document.querySelector("p").innerHTML = imc + ' ' + classificacao(imc);
+    //document.querySelector("p").innerHTML = imc + ' ' + classificacao(imc);
+    document.querySelector("p").innerHTML = "Teste";
 }
 
 function classificacao(imc) {

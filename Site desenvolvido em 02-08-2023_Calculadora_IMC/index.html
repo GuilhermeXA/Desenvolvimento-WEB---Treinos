@@ -4,15 +4,20 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora de IMC</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-    <h1>Calculadora de IMC</h1>
-    Peso: <br>
-    <input type="number" id="peso" placeholder="Digite o seu peso" step="0.01"><br><br>
-        Altura: <br>
-    <input type="number" id="altura" placeholder="Digite a sua altura" step="0.01"><br><br>
-    <button onclick="calcularIMC()">Calcular IMC</button>
-    <p></p>
+    <form>
+        <h1>Calculadora de IMC</h1>
+        <h4>Peso:</h4>
+        <input type="number" id="peso" placeholder="Digite o seu peso" step="0.01"><br><br>
+        <h4>Altura:</h4>
+        <input type="number" id="altura" placeholder="Digite a sua altura" step="0.01"><br><br>
+        <h4>Resultado:</h4>
+        <p></p>
+        <button onclick="calcularIMC()">Calcular IMC</button>
+    </form>
+
     <script src="script.js"></script>
 </body>
 </html>
