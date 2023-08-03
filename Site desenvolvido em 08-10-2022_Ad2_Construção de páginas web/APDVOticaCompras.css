@@ -1,0 +1,96 @@
+/***************************************
+* Estilo Formulários
+*/
+.geral {
+     width: 580px;
+     color: #880000;
+     border: 2px solid #000055; 
+     margin: 10px auto;
+     padding: 6px 6px 15px 6px;
+     background-color: #EEDD99;
+}
+/*** Elementos do Formulário ***/
+.listaCompras {
+     float: right;
+     width: 230px;
+     height: 230px;
+     margin-top: 8px;
+     margin-left: 10px;
+}
+.botoes {
+     text-align: right;
+     margin: 20px 10px 0px 10px;
+}
+/*** Fieldsets ***/
+.fsEsq {
+     float: left;
+     display: inline;
+     margin: 0px 0px 0px 0px;
+}
+.fsDir {
+     float: right;
+     display: inline;
+     margin: 0px 0px 0px 0px;
+}
+/*** Tamanho de Input ***/
+    .inpGrande { width: 440px; }
+    .inpMedio { width: 80px; }
+    .inpNCC { width: 130px; }
+    .inpTelef { width: 90px; }
+    .inpEnder { width: 200px; height: 60px; }
+    .numDD { width:30px; }
+    .numQD { width:50px; }
+/***************************************
+* Estilo Formulário Dados
+*/
+.divLinha {
+     width: 550px;
+     margin-bottom: 6px;
+}
+.colPri {
+     float: left;
+     width: 90px;
+     display: block;
+}
+.colPriCompras {
+     float: left;
+     width: 86px;
+     display: block;
+}
+.colPriPag {
+     float: left;
+     width: 250px;
+     display: block;
+}
+
+#valorTotalParcela {
+     width: 220px;
+     display: block;
+     float: left;
+}
+
+#valorTotalParcela p {
+     text-align: left;
+}
+
+.inpEnder {
+     margin-left: -40px;
+}
+
+.inpTelef {
+     margin-left: -145px;
+     margin-right: -95px;
+     width: 200px;
+}
+
+/*------------------------------------------*/
+/*
+Campos select produtos
+*/
+#caixaProdutos {
+     width: 410px;
+}
+
+option:nth-child(2), option:nth-child(7), option:nth-child(11) {
+     font-weight:bold;
+ }

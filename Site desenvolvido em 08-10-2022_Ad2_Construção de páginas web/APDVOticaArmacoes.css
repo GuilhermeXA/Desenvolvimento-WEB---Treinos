@@ -1,0 +1,73 @@
+/***************************************
+* Estilo Seção Óculos
+*/
+.tabOculos {
+ width: 96%;
+ margin: 0 auto;
+ color: #000066;
+ border-collapse: collapse;
+ font-family: "arial,ubuntu";
+ background-color: #EEDD99; 
+}
+.tabOculos td, .tabOculos th {
+ border: 3px solid #000055;
+ padding: 6px 12px 6px 12px;
+}
+.tabOculos .titulo {
+ color: #FFFF22;
+ font-size: 24px;
+ font-weight: bold;
+ text-align: center;
+ background-color: #447799;
+}
+.tabOculos .linTH {
+ color: #FFFFFF;
+ text-align: center;
+ vertical-align: middle;
+ background-color: #777777;
+}
+.tabOculos .colTH {
+ color: #FFFFFF;
+ text-align: left;
+ background-color: #999999;
+}
+.tabOculos .imgCel {
+ text-align: center;
+ background-color: #FFFFFF;
+}
+.tabOculos .preco {
+ color: #EE0000;
+ font-weight: bold;
+ vertical-align: middle;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+/*----------------------------*/
+#celDes {
+    width: 250px;
+}
+
+.titDes {
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+}
+
+.titDes {
+    height: 60px;
+}
+
+#imgDes {
+    width: 100px;
+    height: 43px;
+    border: solid 2px;
+    border-color: #226699;
+    padding: 12px;
+    background-color: white;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+

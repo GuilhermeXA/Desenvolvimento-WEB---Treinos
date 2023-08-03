@@ -1,0 +1,276 @@
+/*Página Início*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    margin-left:15%;
+}
+
+#menu {
+    display: inline;
+    margin: auto;
+    font-size: 55px;
+    font-weight: bold;
+    text-align: center;
+    color: gold;
+    border-left: solid;
+    padding: 10px;
+}
+
+#menu:hover {
+    background-color: cornflowerblue;
+}
+
+#menu a {
+    text-decoration: none;
+    color: gold;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+body {
+    margin: auto;
+    width: 100%;
+    height: 100%;
+    background-color: darkblue;
+}
+
+#hrTitulo {
+    margin-top: 0.5%;
+    margin-bottom: 1%;
+    height: 3px;
+    border: none;
+    background-color: gold;
+}
+
+#paragrafo1 {
+    float: left;
+    width: 49%;
+    text-align: justify;
+    margin-left: 1%;
+    margin-top: 1%;
+    font-size: 44px;
+    color: gold;
+}
+
+#imagemMapa {
+    float: right;
+    width: 49%;
+    margin-right: 1%;
+    margin-top: 1%;
+}
+
+#imagemMapa img {
+    width: 95%;
+    height: 500px;
+    margin-left: 4%;
+    padding: 1%;
+}
+
+footer {
+    width: 100%;
+    border-top: solid 3px;
+    border-color: gold;
+    float: right;
+    margin-top: 2%;
+}
+
+#rodape {
+    margin: auto;
+    margin-top: 10px;
+}
+
+#rodape a {
+    text-decoration: none;
+    margin-left: 50%;
+    font-size: 20px;
+    font-weight: bold;
+    color: gold;
+    margin-top: 3%;
+}
+
+#rodape a:hover {
+    color: goldenrod;
+    width: 10%;
+    margin-bottom: 5%;
+}
+
+/*----------------------------------------------------------------*/
+/*Página História*/
+body {
+    color: gold;
+}
+
+#titulo1 h1 {
+    font-size: 40px;
+    text-align: center;
+    color: gold;
+    margin-bottom: 2%;
+}
+
+#parte1 {
+    width: 100%;
+}
+
+#paragrafoHistoria1 {
+    font-size: 23.5px;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    margin-left: 1%;
+    float: left;
+}
+
+#imagemParte1 {
+    float: right;
+    width: 49%;
+}
+
+#imagemParte1 img{
+    width: 93%;
+    height: 60%;
+    margin-left: 3%;
+}
+
+#parte2 {
+    width: 100%;
+}
+
+#paragrafoHistoria2 {
+    font-size: 23.5px;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 4%;
+    float: left;
+}
+
+#imagemParte2 {
+    float: right;
+    width: 49%;
+    height: 500px;
+    margin-top: 3%;
+}
+
+#imagemParte2 img {
+    width: 93%;
+    height: 103%;
+    margin-left: 3%;
+}
+
+#parte3 {
+    width: 100%;
+}
+
+#paragrafoHistoria3 {
+    font-size: 23.5px;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 4%;
+    float: left;
+}
+
+#imagemParte3 {
+    float: right;
+    width: 49%;
+    height: 500px;
+    margin-top: 3%;
+}
+
+#imagemParte3 img {
+    width: 93%;
+    height: 98%;
+    margin-left: 3%;
+}
+
+#parte4 {
+    width: 100%;
+}
+
+#paragrafoHistoria4 {
+    font-size: 23.5px;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 4%;
+    float: left;
+}
+
+#imagemParte4 {
+    float: right;
+    width: 49%;
+    height: 450px;
+    margin-top: 3%;
+}
+
+#imagemParte4 img {
+    width: 93%;
+    height: 90%;
+    margin-left: 3%;
+}
+
+#parte5 {
+    width: 100%;
+}
+
+#paragrafoHistoria5 {
+    font-size: 23.5px;
+    text-align: justify;
+    width: 50%;
+    margin: auto;
+    margin-left: 1%;
+    margin-top: 4%;
+    float: left;
+}
+
+#imagemParte5 {
+    float: right;
+    width: 49%;
+    height: 400px;
+    margin-top: 1%;
+}
+
+#imagemParte5 img {
+    width: 93%;
+    height: 90%;
+    margin-left: 3%;
+}
+
+/*---------------------------------------------------------------------*/
+/*Página fotos*/
+
+#caixaDeImagem {
+    width: 100%;
+   height: 100%; 
+}
+
+#caixaImagem {
+    width: 800px;
+    height: 450px;
+    margin: auto;
+    margin-left: 20%;
+    border-radius: 10px;
+}
+
+#btnTrocarImg {
+    width: 800px;
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: blue;
+    color: gold;
+    border: none;
+    border-radius: 10px;
+    margin-left: 20%;
+    margin-top: 1%;
+}
+
+#btnTrocarImg:hover {
+    background-color: cornflowerblue;
+}

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Óculos a Perder de Vista</title>
+        <base target="_blank" />
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="APDVOtica.css"/>
+        <link rel="stylesheet" type="text/css" href="APDVOticaArmacoes.css">
+    </head>
+    <body>
+    <header>
+        <address class="ender">Avenida Parcelada, 123<br/> Tel: (21) 91234-5678<br/>
+        <a href="mailto:contato@apdv.com.br">contato@apdv.com.br</a></address>
+        <img class="imgLogo" src="Imagens/APDVOtica_LogoTopo.png"/><br/>
+    </header>
+    <nav>
+        <div class="menu">
+            <span class="botao">
+             <a href="2_APDVOtica.html"> INICIAL </a></span>
+            <span class="botao">
+             <a href="3_Lentes.html"> LENTES </a></span>
+            <span class="botao">
+             <a href="4_Armacoes.html"> ARMAÇÕES </a></span>
+            <span class="botao">
+             <a href="5_Compras.html"> COMPRAS </a></span>
+        </div>
+        <section>
+            <h3>Armações para Óculos de Grau</h3>
+            <p>Todas em até 10x sem juros no cartão</p>
+            <br/>
+            <table class="tabOculos">
+                <tr><th colspan="5" class="titulo">Armações</th></tr>
+                <tr><th class="linTH">Gênero</th>
+                <th class="linTH">Marca</th>
+                <th class="linTH">Descrição</th>
+                <tr><th rowspan="3" class="colTH">Masculino</th>
+                    <td><a onclick="trocarProduto('Produto1')">Oakley Wingfold</a></td>
+                    <td rowspan="5"><p id="NomeArmacao"></p><img id="CaixaImagem" src="Imagens/vazio.jpg" alt="Imagem da armação" width="100" height="43"><p id="NomeGenero"></p><p id="PrecoArmacao"></p></td>
+                </tr>
+                <tr><td><a onclick="trocarProduto('Produto2')">Persol</a></td>
+                </tr>
+                <tr><td><a onclick="trocarProduto('Produto3')">Ray-ban Round</a></td>
+                </tr>
+                <tr><th rowspan="2" class="colTH">Feminino</th>
+                <td><a onclick="trocarProduto('Produto4')">Kipling</a></td>
+                </tr>
+                <tr><td><a onclick="trocarProduto('Produto5')">Michael Kors</a></td>
+                </tr>
+            </table>
+        </section>
+        <script src="script.js"></script>
+    </body>
+</html>

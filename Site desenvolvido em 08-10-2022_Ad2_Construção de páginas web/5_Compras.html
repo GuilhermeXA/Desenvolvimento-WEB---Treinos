@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Óculos a Perder de Vista</title>
+        <base target="_blank" />
+        <link href='https://fonts.googleapis.com/css?family=Karla' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Stoke' rel='stylesheet'>
+        <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet'>
+        <link rel="stylesheet" type="text/css" href="APDVOtica.css"/>
+        <link rel="stylesheet" type="text/css" href="APDVOticaCompras.css">
+    </head>
+    <body>
+    <header>
+        <address class="ender">Avenida Parcelada, 123<br/> Tel: (21) 91234-5678<br/>
+        <a href="mailto:contato@apdv.com.br">contato@apdv.com.br</a></address>
+        <img class="imgLogo" src="Imagens/APDVOtica_LogoTopo.png"/><br/>
+    </header>
+    <nav>
+        <div class="menu">
+            <span class="botao">
+             <a href="2_APDVOtica.html"> INICIAL </a></span>
+            <span class="botao">
+             <a href="3_Lentes.html"> LENTES </a></span>
+            <span class="botao">
+             <a href="4_Armacoes.html"> ARMAÇÕES </a></span>
+            <span class="botao">
+             <a href="5_Compras.html"> COMPRAS </a></span>
+        </div>
+        <section>
+            <h3>Compras</h3>
+            <form class="geral" method="POST">
+                <fieldset>
+                    <legend> Identificação&nbsp;</legend>
+                    <div class="divLinha">
+                        <label class="colPri">Nome: </label>
+                        <input type="text" class="inpGrande" name="TxtNomeCompleto" />
+                    </div>
+                    <div class="divLinha">
+                        <label for="idEmail" class="colPri">E-mail:</label>
+                        <input id="idEmail" class="inpGrande"
+                         type="email" name="TxtEmail"/>
+                    </div>
+                    <div class="divLinha">
+                        <label class="colPri">Endereço: </label>
+                        <textarea name="TxtEnder" rows="2" class="inpEnder"></textarea>
+                        <fieldset class="fsDir"><legend>Genero:</legend>
+                            <label><input type="radio" name="TglSexo" value="M" checked />Mas</label>
+                            <label><input type="radio" name="TglSexo" value="F" />Fem</label>
+                            <label><input type="radio" name="TglSexo" value="O" />Outro</label>
+                        </fieldset>
+                    </div> 
+                    <fieldset class="fsDir">
+                        <legend>Nascimento:</legend>
+                        <input type="number" name="TxtDiaNasc" min="1" max="31" class="numDD" /> /
+                        <input type="number" name="TxtMesNasc" min="1" max="12" class="numDD" /> /
+                        <input type="number" name="TxtAnoNasc" value="1980" min="1920" max="2002" class="numQD" />
+                    </fieldset>
+                    <div class="divLinha">
+                        <label class="colPri">Telefone:</label>
+                        <input type="text" class="inpTelef" name="TxtTelefone"/>
+                    </div>
+                    <div class="divLinha">
+                        <label class="colPri">Celular:</label>
+                        <input type="text" class="inpTelef" name="TxtCelular" />
+                    </div>
+                </fieldset>
+                <fieldset>
+                    <legend> Pagamento&nbsp;</legend>
+                        <div>
+                            <label id="labelProdutos">Produtos:</label>
+                            <select name="Produtos" id="caixaProdutos">
+                                <option value="">-----</option>
+                                <option value="">Lentes</option>
+                                <option value="Bauch_&_Lonb_Softlens">Bauch & Lonb Softlens</option>
+                                <option value="Coopervision Bioinfinity">Coopervision Bioinfinity</option>
+                                <option value="Johnson Acuvue Oasys">Johnson Acuvue Oasys</option>
+                                <option value="Johnson Acuvue 2">Johnson Acuvue 2</option>
+                                <option value="Armações Masculinas">Armações Masculinas</option>
+                                <option value="Oakley Wingfold">Oakley Wingfold</option>
+                                <option value="Persol">Persol</option>
+                                <option value="Ray-ban Round">Ray-ban Round</option>
+                                <option value="Armações Femininas">Armações Femininas</option>
+                                <option value="Kipling">Kipling</option>
+                                <option value="Michael Kors">Michael Kors</option>
+                            </select>
+                            <button id="btnIncluir"  onclick="preencherTextArea2();">Incluir</button>
+                            <!--<button type="submit" id="btnIncluir" onclick="preencherTextArea();">Incluir</button>-->
+                        </div>
+                        <textarea id="listaCompra" class="listaCompras" name="listaPedidos" readonly></textarea>
+                <fieldset class="fsEsq"><legend> Cartão&nbsp;</legend>
+                <fieldset class="fsEsq">
+                    <legend> Bandeira:</legend>
+                    <label><input type="radio" name="RadBand" checked />Visa</label>
+                    <label><input type="radio" name="RadBand" />Master</label>
+                    <label><input type="radio" name="RadBand" />Elo</label>
+                </fieldset>
+                <br/><br/><br/><br/>
+                <div>
+                    <label class="colPriCompras" for="mesVal">Validade:</label>
+                    <input type="number" name="TxtMesVal" id="mesVal" min="1" max="12" class="numDD" value="1" /> /
+                    <input type="number" name="TxtAnoVal" id="anoVal" value="2022" min="2022" max="2030" class="numQD" /></div>
+                <div>
+                    <br/>
+                    <label class="colPriCompras" for="numCar">Número:</label>
+                    <input type=text name="TxtNumCard" class="inpNCC" id="numCar"/>
+                </div>
+                <div>
+                    <br/>
+                    <label class="colPriCompras" for="numPar">Parcelas:</label>
+                    <Select name="selParcelas" id="caixaParcelas">
+                     <option value="AV">à vista</option>
+                     <option value="02"> 2x</option>
+                     <option value="03"> 3x</option>
+                     <option value="04"> 4x</option>
+                     <option value="05"> 5x</option>
+                     <option value="06"> 6x</option>
+                     <option value="07"> 7x</option>
+                     <option value="08"> 8x</option>
+                     <option value="09"> 9x</option>
+                     <option value="10"> 10x</option>
+                    </select> </div>
+                </div>
+                <button id="btnTeste" onclick="somaPreco();">Teste</button>
+            </fieldset>
+            <div id="valorTotalParcela">
+                <p>Valor Total R$ <span id="valTotal"></span></p>
+                <p>Em <span id="qtdParcela"></span> X de R$ <span id="valParcela"></span></p>
+            </div>
+            </fieldset>
+                <div class="botoes">
+                 <input type="submit" value="Enviar" />
+                 <input type="reset" value="Limpar" />
+                </div>
+            </form>
+        </section>
+        <script type="text/javascript" src="script.js"></script>
+    </body>
+</html>

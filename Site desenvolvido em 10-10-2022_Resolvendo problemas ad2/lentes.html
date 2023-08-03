@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lentes</title>
+</head>
+<body>
+    <section>
+        <h3>Lentes de Contato Reutilizáveis</h3>
+        <p>Todas em até 10x sem juros no cartão</p>
+        <div class="listaLentes">
+            <ol type="I">
+                <button onclick="abrirJanela(0);"></button>
+                <li><a href="" onclick="abrirJanela(0);">Softlens</a></li>
+                <li><a href="" onclick="abrirJanela(1);">Bioinfinity</a></li>
+                <li><a href="" onclick="abrirJanela(2);">Acuvue Oasys</a></li>
+                <li><a href="" onclick="abrirJanela(3);">Acuvue 2</a></li>
+            </ol>
+        </div>
+    </section>
+    <script type="text/javascript">
+        
+        /*
+        function abrirJanela() {
+            janela = open("","","resizable=yes, width=200, height=200");
+
+            janela.document.write("<html> <head> <meta charset='utf-8'></head>");
+            janela.document.write("<body><h1>Teste</h1>");
+            janela.document.write("</body></html")
+
+        }
+        */
+        //Páginas Lentes
+        var marcaLente = ["Softlens", "Bioinfinity", "Acuvue Oasys", "Acuvue 2"];
+        var imgLente = ["BauchELomb_30D_200.jpg", "Bioinfinity_30D_200.jpg", "Acuvue_15D_200.jpg", "Acuvue2_15D_200.jpg"];
+        var imgAlt = ["Lente Softlens", "Lente Bioinfinity", "Lente Acuvue Oasys", "Lente Acuvue 2"];
+        var fabricanteLente = ["Bauch & Lonb", "Coopervision", "Johnson & Johnson", "Johnson & Johnson"];
+        var periodoLente = ["30 dias", "30 dias", "15 dias", "15 dias"];
+        var precoLente = ["R$ 100,00", "R$ 180,00", "R$ 220,00", "R$ 170,00"];
+
+        function abrirJanela(c) {
+            janela = open("","","resizable=yes, width=250, height=370");
+
+            janela.document.write("<html> <head> <meta charset='utf-8'> <link rel='stylesheet' type='text/css' href= 'APDVOticaLentes.css'> </head>");
+            janela.document.write("<body> <div class='janInfo''><h1>Modelo " + marcaLente[c] + "</h1>");
+            janela.document.write("<img src='Imagens/" + imgLente[c] + "' alt='" + imgAlt + "'>");
+            janela.document.write("<p>Fabricante: " + fabricanteLente[c] + "</p>");
+            janela.document.write("<p>Período: " + periodoLente[c] + "</p>");
+            janela.document.write("<p>Preço: " + precoLente[c] + "</p>");
+            janela.document.write("<button onclick='window.close();'>Fechar</button></div></body></html>");
+        }
+
+    </script>
+</body>
+</html>

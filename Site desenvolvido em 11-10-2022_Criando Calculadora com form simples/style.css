@@ -1,0 +1,71 @@
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 400px;
+    height: 580px;
+    margin: auto;
+    margin-top: 100px;
+    background-color: burlywood;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    border-bottom: solid;
+}
+
+form label {
+    width: 80%;
+    height: 30px;
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    border: none;
+}
+
+form input {
+    width: 80%;
+    height: 50px;
+    display: block;
+    margin-top: 5px;
+    margin: auto;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 10px;
+    border: none;
+}
+
+form button {
+    width: 38.8%;
+    height: 80px;
+    display: inline;
+    margin: auto;
+    margin-top: 15px;
+    margin-left: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    border-radius: 10px;
+    border: none;
+    background-color: darkgray;
+}
+
+form button[type='reset'] {
+    margin-left: 8px;
+}
+
+#campoResultado {
+    height: 100px;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+}

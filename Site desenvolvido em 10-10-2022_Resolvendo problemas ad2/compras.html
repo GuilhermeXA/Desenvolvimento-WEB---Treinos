@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Compras</title>
+</head>
+<body>
+	<form class="geral" method="POST">
+        <fieldset>
+            <legend> Identificação&nbsp;</legend>
+            <div class="divLinha">
+                <label class="colPri">Nome: </label>
+                <input type="text" class="inpGrande" name="TxtNomeCompleto" />
+            </div>
+            <div class="divLinha">
+                <label for="idEmail" class="colPri">E-mail:</label>
+                <input id="idEmail" class="inpGrande"
+                 type="email" name="TxtEmail"/>
+            </div>
+            <div class="divLinha">
+                <label class="colPri">Endereço: </label>
+                <textarea name="TxtEnder" rows="2" class="inpEnder"></textarea>
+                <fieldset class="fsDir"><legend>Genero:</legend>
+                    <label><input type="radio" name="TglSexo" value="M" checked />Mas</label>
+                    <label><input type="radio" name="TglSexo" value="F" />Fem</label>
+                    <label><input type="radio" name="TglSexo" value="O" />Outro</label>
+                </fieldset>
+            </div> 
+            <fieldset class="fsDir">
+                <legend>Nascimento:</legend>
+                <input type="number" name="TxtDiaNasc" min="1" max="31" class="numDD" /> /
+                <input type="number" name="TxtMesNasc" min="1" max="12" class="numDD" /> /
+                <input type="number" name="TxtAnoNasc" value="1980" min="1920" max="2002" class="numQD" />
+            </fieldset>
+            <div class="divLinha">
+                <label class="colPri">Telefone:</label>
+                <input type="text" class="inpTelef" name="TxtTelefone"/>
+            </div>
+            <div class="divLinha">
+                <label class="colPri">Celular:</label>
+                <input type="text" class="inpTelef" name="TxtCelular" />
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend> Pagamento&nbsp;</legend>
+                <div>
+                    <label id="labelProdutos">Produtos:</label>
+                    <select name="Produtos" id="caixaProdutos">
+                        <option value="">-----</option>
+                        <option value="">Lentes</option>
+                        <option value="Bauch_&_Lonb_Softlens">Bauch & Lonb Softlens</option>
+                        <option value="Coopervision Bioinfinity">Coopervision Bioinfinity</option>
+                        <option value="Johnson Acuvue Oasys">Johnson Acuvue Oasys</option>
+                        <option value="Johnson Acuvue 2">Johnson Acuvue 2</option>
+                        <option value="Armações Masculinas">Armações Masculinas</option>
+                        <option value="Oakley Wingfold">Oakley Wingfold</option>
+                        <option value="Persol">Persol</option>
+                        <option value="Ray-ban Round">Ray-ban Round</option>
+                        <option value="Armações Femininas">Armações Femininas</option>
+                        <option value="Kipling">Kipling</option>
+                        <option value="Michael Kors">Michael Kors</option>
+                    </select>
+                    <button id="btnIncluir" onclick="preencherTextArea();">Incluir</button>
+                    <!--<button type="submit" id="btnIncluir" onclick="preencherTextArea();">Incluir</button>-->
+                </div>
+                <textarea id="listaCompra" class="listaCompras" name="listaPedidos" readonly></textarea>
+        <fieldset class="fsEsq"><legend> Cartão&nbsp;</legend>
+        <fieldset class="fsEsq">
+            <legend> Bandeira:</legend>
+            <label><input type="radio" id="RadBand" name="RadBand" value="Visa" />Visa</label>
+            <label><input type="radio" id="RadBand" name="RadBand" value="Master" />Master</label>
+            <label><input type="radio" id="RadBand" name="RadBand" value="Elo" />Elo</label>
+        </fieldset>
+        <br/><br/><br/><br/>
+        <div>
+            <label class="colPriCompras" for="mesVal">Validade:</label>
+            <input type="number" name="TxtMesVal" id="mesVal" min="1" max="12" class="numDD" value="1" /> /
+            <input type="number" name="TxtAnoVal" id="anoVal" value="2022" min="2022" max="2030" class="numQD" /></div>
+        <div>
+            <br/>
+            <label class="colPriCompras" for="numCar">Número:</label>
+            <input type=text name="TxtNumCard" class="inpNCC" id="numCar"/>
+        </div>
+        <div>
+            <br/>
+            <label class="colPriCompras" for="numPar">Parcelas:</label>
+            <Select name="selParcelas" id="caixaParcelas">
+             <option value="AV">à vista</option>
+             <option value="02"> 2x</option>
+             <option value="03"> 3x</option>
+             <option value="04"> 4x</option>
+             <option value="05"> 5x</option>
+             <option value="06"> 6x</option>
+             <option value="07"> 7x</option>
+             <option value="08"> 8x</option>
+             <option value="09"> 9x</option>
+             <option value="10"> 10x</option>
+            </select> </div>
+        </div>
+    </fieldset>
+    <div id="valorTotalParcela">
+        <p>Valor Total R$ <span></span></p>
+        <p>Em <span></span> X de R$ <span></span></p>
+    </div>
+    </fieldset>
+        <div class="botoes">
+         <input type="submit" value="Enviar" />
+         <input type="reset" value="Limpar" />
+        </div>
+    </form>
+    <script type="text/javascript" src="script.js"></script>
+</body>
+</html>

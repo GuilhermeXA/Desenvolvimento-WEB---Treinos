@@ -1,0 +1,57 @@
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    margin: auto;
+    padding: auto;
+    width: 50%;
+    height: 700px;
+    margin-top: 1%;
+    border: solid;
+}
+
+form h1 {
+    margin: auto;
+    margin-left: 12%;
+    margin-top: 1%;
+    font-size: 300%;
+}
+
+form label {
+    margin-left: 5%;
+    margin-top: 3%;
+    display: block;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+form input {
+    margin-left: 5%;
+    margin-top: 3%;
+    display: block;
+    width: 85%;
+    height: 5%;
+}
+
+#btnEnviar {
+    width: 42%;
+    margin-top: 5%;
+    display: inline;
+    height: 10%;
+    font-size: 150%;
+    font-weight: bold;
+}
+
+#btnLimpar {
+    width: 42%;
+    display: inline;
+    margin-top: 5%;
+    margin-left: 2%;
+    height: 10%;
+    font-size: 150%;
+    font-weight: bold;
+}
+
