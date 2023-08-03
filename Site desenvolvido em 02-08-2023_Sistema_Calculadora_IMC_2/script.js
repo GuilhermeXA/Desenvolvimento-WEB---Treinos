@@ -4,23 +4,23 @@ document.getElementById("calcular").addEventListener("click", function() {
     var imc = peso / (altura * altura);
 
     var resultadoP = document.getElementById("resultado");
-    resultadoP.innerHTML = "Seu IMC é: " + imc.toFixed(2) + " Na categoria: " + classificacaoIMC(resultadoP);
+    resultadoP.innerHTML = "Seu IMC é: " + imc.toFixed(2) + " Na categoria: " + classificacaoIMC(imc);
 });
 
-function classificacaoIMC(resultadoP) {
-    if (resultadoP < 18.50) {
+function classificacaoIMC(imc) {
+    if (imc < 18.50) {
         return 'Magreza';
     }
-    else if (resultadoP >= 18.50 && resultadoP <= resultadoP <= 24.99) {
+    else if (imc >= 18.50 && imc <= 24.99) {
         return 'Normal';
     }
-    else if (resultadoP >= 25.00 && resultadoP <= resultadoP <= 29.99) {
+    else if (imc >= 25.00 && imc <= 29.99) {
         return 'Sobrepeso';
     }
-    else if (resultadoP >= 30.00 && resultadoP <= resultadoP <= 39.99) {
+    else if (imc >= 30.00 && imc <= 39.99) {
         return 'Obesidade I';
     }
-    else if (resultadoP >= 40) {
+    else if (imc >= 40) {
         return 'Obesidade II';
     }
 }
