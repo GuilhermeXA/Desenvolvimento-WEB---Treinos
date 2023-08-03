@@ -1,0 +1,47 @@
+div {
+    width: 50%;
+    height: 100%;
+    border-style: solid;
+    background-color: beige;
+}
+
+h1 {
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+}
+
+input {
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 25px;
+}
+
+label {
+    text-align: center;
+    margin-left: 10%;
+    width: 80%;
+}
+
+button {
+    text-align: center;
+    margin-top: 10px;
+    margin-left: 10%;
+    width: 81%;
+    height: 70px;
+}
+
+p {
+    text-align: center;
+    margin-left: 10%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 80%;
+    height: 50px;
+    font-size: 25px;
+}
